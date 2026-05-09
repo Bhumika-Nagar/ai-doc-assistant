@@ -13,53 +13,11 @@ A beginner-friendly full-stack AI app for uploading documents, generating summar
 | AI        | LangChain JS + Google Gemini API    |
 | File Upload | Multer                            |
 
-
-
-## Folder Structure
-
-
-ai-doc-assistant/
-├── client/                      # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── FilePanel.jsx    # Left sidebar: file list + upload
-│   │   │   ├── SummaryCard.jsx  # AI summary card
-│   │   │   └── ChatInterface.jsx# Q&A chat UI
-│   │   ├── utils/
-│   │   │   └── api.js           # Axios API calls
-│   │   ├── App.jsx              # Root layout/dashboard
-│   │   ├── main.jsx             # Entry point
-│   │   └── index.css            # Tailwind + custom styles
-│   ├── index.html
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── package.json
-│
-└── server/                      # Express backend
-    ├── models/
-    │   ├── Document.js          # MongoDB schema for files
-    │   └── ChatHistory.js       # MongoDB schema for Q&A pairs
-    ├── routes/
-    │   ├── upload.js            # POST /upload, GET /upload
-    │   ├── summarize.js         # POST /summarize
-    │   ├── ask.js               # POST /ask
-    │   └── history.js           # GET /history
-    ├── utils/
-    │   ├── aiUtils.js           # LangChain + Gemini logic
-    │   └── extractText.js       # Text extraction (TXT/PDF)
-    ├── uploads/                 # Uploaded files stored here
-    ├── index.js                 # Express entry point
-    └── package.json
-
-
-
-
 ## Prerequisites
 
 - **Node.js** v18+
 - **MongoDB** running locally (`mongodb://localhost:27017`) or a MongoDB Atlas URI
 - **Google Gemini API Key** — free at [aistudio.google.com](https://aistudio.google.com/app/apikey)
-
 
 
 ## Setup Instructions
