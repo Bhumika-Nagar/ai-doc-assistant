@@ -1,5 +1,5 @@
 
-server/utils
+
 node_modules/
 .env
 uploads/*
