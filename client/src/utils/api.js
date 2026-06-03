@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/", // proxied to localhost:5000 via vite
+  baseURL: import.meta.env.VITE_API_URL || "/",
 });
 
 export const uploadFile = (file) => {
