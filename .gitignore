@@ -6,3 +6,5 @@ uploads/*
 !uploads/.gitkeep
 dist/
 .DS_Store
+server/uploads/*
+!server/uploads/.gitkeep
